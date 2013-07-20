@@ -1,14 +1,9 @@
 /*
- * Audero Smoke Effect is a JavaScript library that let you create a smoke effect
- * for one or more elements on your web page.
- * Several little clouds will be created starting from a choosen element(s).
- * This script <b>requires jQuery</b> in order to work and so jQuery must be included
- * <b>before</b> it. Moreover, the code is correlated with a CSS file that
- * must be included in the page in which you want to use the effect.
- * The library is based on the idea shown by Gaya
- * <a target="_blank" href="http://www.gayadesign.com/diy/puffing-smoke-effect-in-jquery/">here</a>
- * but <u>the code has been totally written from scratch and has new features.</u>
- * For more details on this library and how to use it, see the official documentation.
+ * Audero Smoke Effect is a jQuery plugin that let you create a smoke effect for one or more elements,
+ * usually images, on your web page. You can create the effect of a little smoke puff, cloud or anything
+ * else you want that appears from the elements you chose. This plugin is based on
+ * the concept shown by Gaya (http://www.gayadesign.com/diy/puffing-smoke-effect-in-jquery) but the code
+ * has been totally written from scratch and has new features.
  *
  * @author  Aurelio De Rosa <aurelioderosa@gmail.com>
  * @version 1.0.0
