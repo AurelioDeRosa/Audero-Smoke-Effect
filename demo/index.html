@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Audero Smoke Effect Demo - Created by Aurelio De Rosa</title>
+      <meta charset="UTF-8"/>
+      <style>
+         body {
+            width: 500px;
+            margin: 0 auto;
+         }
+
+         h1 {
+            text-align: center;
+         }
+
+         pre {
+            background-color: #EEEEEE;
+            border: 1px #000000 dotted;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+         }
+
+         #run-button,
+         #toggle-button {
+            display: block;
+            margin: 1em 0;
+         }
+      </style>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="../src/jquery.auderoSmokeEffect.js"></script>
+      <script>
+         $(window).load(function () {
+            $("#chicken-1").auderoSmokeEffect({
+               imagePath: "images/smoke.png"
+            });
+            $("#chicken-2").auderoSmokeEffect({
+               imagePath: "images/cloud.png",
+               speed: 3000,
+               pause: "random"
+            });
+            $("#run-button").click(function() {
+               $("#chicken-3").auderoSmokeEffect({
+                  imagePath: "images/cloud.png",
+                  width: 150,
+                  height: 120,
+                  posX: 0,
+                  posY: 0,
+                  repeat: 1
+               });
+            });
+            $("#chicken-4").auderoSmokeEffect({
+               imagePath: "images/smoke.png",
+               isEnabled: false,
+               speed: 1000,
+               pause: 500
+            });
+            $("#toggle-button").click(function() {
+               $("#chicken-4").auderoSmokeEffect('toggle');
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Audero Smoke Effect Demo - Created by Aurelio De Rosa</h1>
+
+      <h2 id="example-1">Example 1 - Basic</h2>
+      <p>
+         This example shows the most basic configuration in which you set only the path to the image to animate, and
+         use all the default values for the other options.
+      </p>
+      <img id="chicken-1" src="images/chicken.png" />
+
+      <h2 id="example-2">Example 2 - Set options</h2>
+      <p>
+         This example demonstrates how you can customize the animation passing other options to the initialization
+         method. In this case, the speed of the animation has been set to 3000 milliseconds (3 seconds), and there is
+         a random pause between two animations.
+      </p>
+      <img id="chicken-2" src="images/chicken.png" />
+
+      <h2 id="example-3">Example 3 - Run animation on user interaction</h2>
+      <p>
+         This example is quite different from the previous in the behavior. In fact, the animation starts once the user
+         clicks the button reading "Run animation" and will show only one puff because of the <code>repeat</code>
+         option set to 1. In addition, the animated image will be scaled up by a factor of two and it'll start from
+         the top-left corner of the chicken.
+      </p>
+      <img id="chicken-3" src="images/chicken.png" />
+      <button id="run-button">Run animation</button>
+
+      <h2 id="example-4">Example 4 - Toggle animation on user interaction</h2>
+      <p>
+         This example shows how you can initialize the animation, setting all the options on the element, but disable
+         it by default, using the <code>isEnabled</code> property. In this case, the animation won't start unless
+         enabled. Every time the user clicks the button reading "Toggle animation" the animation will be enabled or
+         disabled depending on its previous status.
+      </p>
+      <img id="chicken-4" src="images/chicken.png" />
+      <button id="toggle-button">Toggle animation</button>
+   </body>
+</html>

@@ -1,0 +1,39 @@
+{
+   "name": "auderoSmokeEffect",
+   "version": "1.0.0",
+   "title": "Audero Smoke Effect",
+   "author": {
+      "name": "Aurelio De Rosa",
+      "email": "aurelioderosa@gmail.com",
+      "url": "http://www.audero.it"
+   },
+   "licenses": [
+      {
+         "type": "MIT",
+         "url": "http://opensource.org/licenses/MIT"
+      },
+      {
+         "type": "GPL-3.0",
+         "url": "http://opensource.org/licenses/GPL-3.0"
+      }
+   ],
+   "dependencies": {
+      "jquery": ">=1.2.3"
+   },
+   "description": "Audero Smoke Effect is a jQuery plugin that let you create a smoke effect for one or more elements, usually images, on your web page. You can create the effect of a little smoke puff, cloud or anything else you want that appears from the elements you chose.",
+   "keywords": [
+      "effect",
+      "animation"
+   ],
+   "homepage": "https://github.com/AurelioDeRosa/Audero-Smoke-Effect",
+   "docs": "https://github.com/AurelioDeRosa/Audero-Smoke-Effect",
+   "demo": "http://htmlpreview.github.io/?https://github.com/AurelioDeRosa/Audero-Smoke-Effect/blob/master/demo/index.html",
+   "bugs": "https://github.com/AurelioDeRosa/Audero-Smoke-Effect/issues",
+   "maintainers": [
+      {
+         "name": "Aurelio De Rosa",
+         "email": "aurelioderosa@gmail.com",
+         "url": "http://www.audero.it"
+      }
+   ]
+}
