@@ -12,7 +12,7 @@
  * and GPL-3.0 (http://opensource.org/licenses/GPL-3.0)
  */
 (function ($) {
-   // Private properties and methdos
+   // Private properties and methods
    var dataAttributeName = "audero-smoke-effect";
    var createPuff = function ($element) {
       var position = $element.offset();
