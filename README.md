@@ -105,7 +105,7 @@ Overriding the default values you can turn it into the following:
     <script>
        $(window).load(function() {
           $.fn.auderoSmokeEffect.defaults.repeat = 5;
-          $.fn.auderoSmokeEffect.defaults.pause = 4000;
+          $.fn.auderoSmokeEffect.defaults.pause = 5000;
           $.fn.auderoSmokeEffect.defaults.speed = 3000;
           $("#chicken").auderoSmokeEffect({
              imagePath: "images/smoke.png"
