@@ -2,7 +2,7 @@
   "name": "auderoSmokeEffect",
   "description": "Audero Smoke Effect is a jQuery plugin that let you create a smoke effect for one or more elements, usually images, on your web page. You can create the effect of a little smoke puff, cloud or anything else you want that appears from the elements you chose.",
   "author": "Aurelio De Rosa (@AurelioDeRosa)",
-  "version": "1.1.0-pre",
+  "version": "1.1.0",
   "main": "src/jquery.auderoSmokeEffect.js",
   "repository": {
     "type": "git",

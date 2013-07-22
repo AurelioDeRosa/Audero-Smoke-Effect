@@ -6,7 +6,7 @@
  * has been totally written from scratch and has new features.
  *
  * @author  Aurelio De Rosa <aurelioderosa@gmail.com>
- * @version 1.1.0-pre
+ * @version 1.1.0
  * @link    https://github.com/AurelioDeRosa/Audero-Smoke-Effect
  * @license Dual licensed under MIT (http://www.opensource.org/licenses/MIT)
  * and GPL-3.0 (http://opensource.org/licenses/GPL-3.0)
