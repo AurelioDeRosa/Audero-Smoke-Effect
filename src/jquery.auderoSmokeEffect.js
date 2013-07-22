@@ -66,7 +66,7 @@
                if (options.repeat !== 0) {
                   setTimeout(function () { createPuff($element); }, time);
                } else {
-                  methods.destroy();
+                  methods.destroy.apply([$element]);
                }
             }
          }
