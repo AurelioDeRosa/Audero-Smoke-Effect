@@ -87,6 +87,14 @@
             $.error("To run jQuery.auderoSmokeEffect you must specify at least the imagePath options");
             return;
          }
+         if (options.width < 0) {
+            $.error("jQuery.auderoSmokeEffect can't show an image with a negative width");
+            return;
+         }
+         if (options.height < 0) {
+            $.error("jQuery.auderoSmokeEffect can't show an image with a negative height");
+            return;
+         }
          if (options.repeat <= 0 && options.repeat !== -1) {
             $.error("jQuery.auderoSmokeEffect should run at least one time");
             return;
