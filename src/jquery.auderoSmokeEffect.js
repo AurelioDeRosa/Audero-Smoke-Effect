@@ -111,7 +111,6 @@
          // Run the animation once the image is completely loaded
          var elements = this;
          var image = new Image();
-         image.src = options.imagePath;
          image.onload = function() {
             var $current;
             if (options.width === 0) {
@@ -135,6 +134,7 @@
                }
             }
          };
+         image.src = options.imagePath;
 
          return this;
       },
