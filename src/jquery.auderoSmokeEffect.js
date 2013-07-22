@@ -6,7 +6,7 @@
  * has been totally written from scratch and has new features.
  *
  * @author  Aurelio De Rosa <aurelioderosa@gmail.com>
- * @version 1.0.0
+ * @version 1.1.0-pre
  * @link    https://github.com/AurelioDeRosa/Audero-Smoke-Effect
  * @license Dual licensed under MIT (http://www.opensource.org/licenses/MIT)
  * and GPL-3.0 (http://opensource.org/licenses/GPL-3.0)
@@ -120,7 +120,8 @@
             }
             for (var i = 0; i < elements.length; i++) {
                $current = $(elements[i]);
-               $current.data(dataAttributeName, options);
+               // Clone the options object so elements will have the same values without sharing the same object
+               $current.data(dataAttributeName, $.extend(true, {}, options));
                if (options.isEnabled === true) {
                   createPuff($current);
                }
