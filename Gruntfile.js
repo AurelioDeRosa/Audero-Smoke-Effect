@@ -1,43 +1,54 @@
+'use strict';
+
 module.exports = function (grunt) {
-   var bannerContent = '/* Audero Smoke Effect <%= pkg.version%> | <%= pkg.author%> | <%= pkg.license%> Licensed */\n';
-   var name = '<%= pkg.name %>';
+   require('time-grunt')(grunt);
+   require('jit-grunt')(grunt);
 
    grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
+
+      jscs: {
+         options: {
+            config: '.jscsrc',
+            fix: true,
+            force: true
+         },
+         dist: '<%= jshint.src %>'
+      },
+
       jshint: {
          options: {
-            eqeqeq: true,
-            trailing: true,
-            bitwise: true,
-            camelcase: true,
-            curly: true,
-            forin: true,
-            noarg: true,
-            noempty: true,
-            nonew: true,
-            undef: true,
-            unused: true,
-            indent: 3,
-            browser: true,
-            jquery: true
+            jshintrc: '.jshintrc',
+            reporter: require('jshint-stylish')
          },
-         target: {
-            src: ['src/jquery.' + name + '.js']
-         }
+         src: [
+            'src/*.js'
+         ]
       },
+
       uglify: {
          options: {
-            banner: bannerContent
+            banner: '/* Audero Smoke Effect <%= pkg.version %> | Aurelio De Rosa (@AurelioDeRosa) | MIT/GPL-3.0 Licensed */\n'
          },
-         target: {
-            src: ['src/jquery.' + name + '.js'],
-            dest: 'src/jquery.' + name + '.min.js'
+         dist: {
+            files: {
+               'dist/jquery.auderoSmokeEffect.min.js': ['src/jquery.auderoSmokeEffect.js']
+            }
          }
       }
    });
 
-   grunt.loadNpmTasks('grunt-contrib-jshint');
-   grunt.loadNpmTasks('grunt-contrib-uglify');
+   grunt.registerTask('lint', [
+      'jshint',
+      'jscs'
+   ]);
 
-   grunt.registerTask('default', ['jshint', 'uglify']);
+   grunt.registerTask('build', [
+      'uglify'
+   ]);
+
+   grunt.registerTask('default', [
+      'lint',
+      'build'
+   ]);
 };
