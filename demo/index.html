@@ -45,38 +45,6 @@
             text-align: right;
          }
       </style>
-      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src="../src/jquery.auderoSmokeEffect.js"></script>
-      <script>
-         $(window).load(function () {
-            $('#chicken-1').auderoSmokeEffect({
-               imagePath: 'images/smoke.png'
-            });
-            $('#chicken-2').auderoSmokeEffect({
-               imagePath: 'images/cloud.png',
-               speed: 3000,
-               pause: 'random'
-            });
-            $('#run-button').click(function() {
-               $('#chicken-3').auderoSmokeEffect({
-                  imagePath: 'images/cloud.png',
-                  width: 150,
-                  height: 120,
-                  posX: 0,
-                  posY: 0,
-                  repeat: 1
-               });
-            });
-            $('.chicken').auderoSmokeEffect({
-               imagePath: 'images/smoke.png',
-               speed: 1000,
-               pause: 500
-            });
-            $('#toggle-chicken-4-1').click(function() {
-               $('#chicken-4-1').auderoSmokeEffect('toggle');
-            });
-         });
-      </script>
    </head>
    <body>
       <h1>Audero Smoke Effect Demo - Created by Aurelio De Rosa</h1>
@@ -125,5 +93,47 @@
          <img id="chicken-4-2" class="chicken" src="images/chicken.png" />
       </div>
       <button id="toggle-chicken-4-1">Toggle animation</button>
+
+      <p>
+         Plugin created by <a href="http://www.audero.it">Aurelio De Rosa</a>
+         (<a href="https://twitter.com/AurelioDeRosa">@AurelioDeRosa</a>).
+      </p>
+
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="../src/jquery.auderoSmokeEffect.js"></script>
+      <script>
+         $(window).load(function() {
+            $('#chicken-1').auderoSmokeEffect({
+               imagePath: 'images/smoke.png'
+            });
+
+            $('#chicken-2').auderoSmokeEffect({
+               imagePath: 'images/cloud.png',
+               speed: 3000,
+               pause: 'random'
+            });
+
+            $('#run-button').click(function() {
+               $('#chicken-3').auderoSmokeEffect({
+                  imagePath: 'images/cloud.png',
+                  width: 150,
+                  height: 120,
+                  posX: 0,
+                  posY: 0,
+                  repeat: 1
+               });
+            });
+
+            $('.chicken').auderoSmokeEffect({
+               imagePath: 'images/smoke.png',
+               speed: 1000,
+               pause: 500
+            });
+
+            $('#toggle-chicken-4-1').click(function() {
+               $('#chicken-4-1').auderoSmokeEffect('toggle');
+            });
+         });
+      </script>
    </body>
 </html>
