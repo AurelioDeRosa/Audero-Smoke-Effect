@@ -4,37 +4,44 @@
       <title>Audero Smoke Effect Demo - Created by Aurelio De Rosa</title>
       <meta charset="UTF-8"/>
       <style>
-         * {
+         *
+         {
             box-sizing: border-box;
          }
 
-         body {
+         body
+         {
             width: 500px;
             margin: 0 auto;
          }
 
-         h1 {
+         h1
+         {
             text-align: center;
          }
 
          #run-button,
-         #toggle-chicken-4-1 {
+         #toggle-chicken-4-1
+         {
             display: block;
             margin: 1em 0;
          }
 
-         .chicken-box {
+         .chicken-box
+         {
             display: inline-block;
             *display: inline;
             *zoom: 1;
             width: 49%;
          }
 
-         .left-chicken {
+         .left-chicken
+         {
             margin-right: 1%;
          }
 
-         .right-chicken {
+         .right-chicken
+         {
             text-align: right;
          }
       </style>
@@ -42,17 +49,17 @@
       <script src="../src/jquery.auderoSmokeEffect.js"></script>
       <script>
          $(window).load(function () {
-            $("#chicken-1").auderoSmokeEffect({
-               imagePath: "images/smoke.png"
+            $('#chicken-1').auderoSmokeEffect({
+               imagePath: 'images/smoke.png'
             });
-            $("#chicken-2").auderoSmokeEffect({
-               imagePath: "images/cloud.png",
+            $('#chicken-2').auderoSmokeEffect({
+               imagePath: 'images/cloud.png',
                speed: 3000,
-               pause: "random"
+               pause: 'random'
             });
-            $("#run-button").click(function() {
-               $("#chicken-3").auderoSmokeEffect({
-                  imagePath: "images/cloud.png",
+            $('#run-button').click(function() {
+               $('#chicken-3').auderoSmokeEffect({
+                  imagePath: 'images/cloud.png',
                   width: 150,
                   height: 120,
                   posX: 0,
@@ -60,13 +67,13 @@
                   repeat: 1
                });
             });
-            $(".chicken").auderoSmokeEffect({
-               imagePath: "images/smoke.png",
+            $('.chicken').auderoSmokeEffect({
+               imagePath: 'images/smoke.png',
                speed: 1000,
                pause: 500
             });
-            $("#toggle-chicken-4-1").click(function() {
-               $("#chicken-4-1").auderoSmokeEffect('toggle');
+            $('#toggle-chicken-4-1').click(function() {
+               $('#chicken-4-1').auderoSmokeEffect('toggle');
             });
          });
       </script>
