@@ -102,37 +102,35 @@
       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script src="../src/jquery.auderoSmokeEffect.js"></script>
       <script>
-         $(window).load(function() {
-            $('#chicken-1').auderoSmokeEffect({
-               imagePath: 'images/smoke.png'
-            });
+         $('#chicken-1').auderoSmokeEffect({
+            imagePath: 'images/smoke.png'
+         });
 
-            $('#chicken-2').auderoSmokeEffect({
+         $('#chicken-2').auderoSmokeEffect({
+            imagePath: 'images/cloud.png',
+            speed: 3000,
+            pause: 'random'
+         });
+
+         $('#run-button').click(function() {
+            $('#chicken-3').auderoSmokeEffect({
                imagePath: 'images/cloud.png',
-               speed: 3000,
-               pause: 'random'
+               width: 150,
+               height: 120,
+               posX: 0,
+               posY: 0,
+               repeat: 1
             });
+         });
 
-            $('#run-button').click(function() {
-               $('#chicken-3').auderoSmokeEffect({
-                  imagePath: 'images/cloud.png',
-                  width: 150,
-                  height: 120,
-                  posX: 0,
-                  posY: 0,
-                  repeat: 1
-               });
-            });
+         $('.chicken').auderoSmokeEffect({
+            imagePath: 'images/smoke.png',
+            speed: 1000,
+            pause: 500
+         });
 
-            $('.chicken').auderoSmokeEffect({
-               imagePath: 'images/smoke.png',
-               speed: 1000,
-               pause: 500
-            });
-
-            $('#toggle-chicken-4-1').click(function() {
-               $('#chicken-4-1').auderoSmokeEffect('toggle');
-            });
+         $('#toggle-chicken-4-1').click(function() {
+            $('#chicken-4-1').auderoSmokeEffect('toggle');
          });
       </script>
    </body>
