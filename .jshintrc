@@ -1,0 +1,39 @@
+{
+   "bitwise": true,
+   "curly": true,
+   "eqeqeq": true,
+   "forin": false,
+   "freeze": true,
+   "funcscope": false,
+   "futurehostile": true,
+   "globals": [],
+   "globalstrict": true,
+   "iterator": false,
+   "latedef": true,
+   "maxcomplexity": 6,
+   "maxdepth": 3,
+   "maxerr": 50,
+   "maxparams": 4,
+   "maxstatements": 20,
+   "noarg": true,
+   "nocomma": true,
+   "nonbsp": true,
+   "nonew": true,
+   "notypeof": true,
+   "predef": [],
+   "shadow": "inner",
+   "singleGroups": true,
+   "strict": true,
+   "undef": true,
+   "unused": true,
+   "varstmt": false,
+
+   "browser": true,
+   "mocha": true,
+   "node": true,
+   "jquery": true,
+
+   "globals": {
+      "define": false
+   }
+}
