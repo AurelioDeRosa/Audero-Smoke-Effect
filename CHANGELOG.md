@@ -1,6 +1,6 @@
 # Changelog
 
-## Next
+## 1.2.0 (2015-12-31)
 
 * Implemented the UMD pattern
 * Refactored code
