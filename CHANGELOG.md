@@ -4,6 +4,7 @@
 
 * Implemented the UMD pattern
 * Refactored code
+* Added `bower.json` file
 * Moved the minified file into the `dist` folder
 * Improved documentation
 * Improved code quality and style
