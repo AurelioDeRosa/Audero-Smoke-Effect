@@ -1,6 +1,15 @@
-# Audero Smoke Effect Changes History #
+# Changelog
 
-## 1.1.0 (2013-07-22) ##
+## Next
+
+* Implemented the UMD pattern
+* Refactored code
+* Moved the minified file into the `dist` folder
+* Improved documentation
+* Improved code quality and style
+* Renamed `HISTORY.md` into `CHANGELOG.md`
+
+## 1.1.0 (2013-07-22)
 
 * Fixed the problem of the animation that doesn't run in Internet Explorer 8 if the image is cached ([#5](https://github.com/AurelioDeRosa/Audero-Smoke-Effect/issues/5))
 * Added test for invalid width and height properties ([#3](https://github.com/AurelioDeRosa/Audero-Smoke-Effect/issues/3))
@@ -11,6 +20,6 @@
 * Updated description inside the plugin
 * Fixed some typos
 
-## 1.0.0 (2013-07-20) ##
+## 1.0.0 (2013-07-20)
 
 * First release
